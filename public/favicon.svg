@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="14" fill="#54212D"/>
+  <rect x="2" y="2" width="60" height="60" rx="12" stroke="#C5A46D" stroke-width="2" stroke-opacity="0.6"/>
+  <circle cx="32" cy="32" r="24" stroke="#C5A46D" stroke-width="1.5" stroke-dasharray="2 2" stroke-opacity="0.8"/>
+  <!-- Grain Sheaf / PDS Silo Symbol -->
+  <path d="M32 14V50" stroke="#E4B34F" stroke-width="3" stroke-linecap="round"/>
+  <path d="M24 22C24 22 28 24 32 28C36 24 40 22 40 22" stroke="#E4B34F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M21 30C21 30 26 32 32 36C38 32 43 30 43 30" stroke="#E4B34F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M22 39C22 39 27 41 32 44C37 41 42 39 42 39" stroke="#E4B34F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="32" cy="14" r="3.5" fill="#E4B34F"/>
+</svg>

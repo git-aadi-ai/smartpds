@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --color-burgundy: #702D3B;
+    --color-burgundy-dark: #54212D;
+    --color-warm-bg: #FAF7F2;
+    --color-card-bg: #FFFFFF;
+    --color-text-slate: #344054;
+    --color-text-secondary: #707887;
+    --color-border: #E7E2DF;
+    --color-gold: #C5A46D;
+  }
+
+  .dark {
+    --color-burgundy: #801B3A;
+    --color-burgundy-dark: #3B1020;
+    --color-warm-bg: #0B0F17;
+    --color-card-bg: #151C28;
+    --color-text-slate: #F1F5F9;
+    --color-text-secondary: #A1AAB9;
+    --color-border: #293445;
+    --color-gold: #E4B34F;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #344054;
+    background-color: #FAF7F2;
+    transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark body {
+    color: #F1F5F9;
+    background-color: #0B0F17;
+  }
+
+  .font-mono, code, kbd, samp, pre {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom styling for tabular figures and print-optimized digital challan */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Focus outline theme */
+input:focus, select:focus, textarea:focus {
+  border-color: #702D3B !important;
+  box-shadow: 0 0 0 1px #702D3B !important;
+}
+
+.dark input:focus, .dark select:focus, .dark textarea:focus {
+  border-color: #801B3A !important;
+  box-shadow: 0 0 0 1px #801B3A !important;
+}
+
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  
+  .no-print {
+    display: none !important;
+  }
+  
+  #printable-challan-container {
+    display: block !important;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 20px !important;
+    background: white !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+}
